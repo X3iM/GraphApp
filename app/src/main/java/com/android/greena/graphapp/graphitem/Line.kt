@@ -50,6 +50,7 @@ class Line(count: Int) : GraphItem {
 
     override fun isTouch(eventX: Float, eventY: Float): Line? {
 //        if (isTouched)
+        Log.d("TAG", "line x1: $x1, x2: $x2, y1: $y1, y2: $y2,")
         var x = abs(x2 - x1)
         x = if (x <= 0.5) -1F else abs(eventX - x1) / x
         linePartX = x

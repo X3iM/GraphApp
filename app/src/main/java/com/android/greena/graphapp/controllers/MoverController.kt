@@ -46,7 +46,7 @@ class MoverController(var graphItem: GraphItem?, var event: PointF) : Runnable {
     }
 
     fun stop() {
-        Log.d("THREAD", "MoverController")
+//        Log.d("THREAD", "MoverController")
         running = false
     }
 

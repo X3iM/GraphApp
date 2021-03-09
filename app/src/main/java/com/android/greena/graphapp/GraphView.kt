@@ -48,6 +48,7 @@ class GraphView(context: Context) : SurfaceView(context), Runnable {
 //        Log.d("TAG", "event downTime ${event.action}")
 //        Log.d("TAG", "event downTime ${event.actionMasked}")
 //        Log.d("TAG", "event eventTime ${event.eventTime}")
+        Log.d("TAG", "x: ${event.x}, y: ${event.y}")
         when (event.action and MotionEvent.ACTION_MASK) {
             MotionEvent.ACTION_DOWN -> {
                 movedItem = isTouchGraphItem(event)

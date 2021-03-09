@@ -27,7 +27,7 @@ class HoldController() : Runnable {
             if (System.nanoTime() - currentTime >= HOLD_TIME) {
 //                Toast.makeText()
                 graphItem.isHold = true
-                Log.d("THREAD - HoldController", "stop")
+//                Log.d("THREAD - HoldController", "stop")
                 stop()
             }
         }
